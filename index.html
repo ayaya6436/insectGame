@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catch The Insect</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Attraper des insects</h1>
+      <button class="btn" id="start-btn">Jouer</button>
+    </div>
+
+    <div class="screen">
+      <h1>Choisissez votre insecte favoris ?</h1>
+      <ul class="insect-list">
+        <li>
+          <button class="choose-insect-btn">
+            <p>mouche</p>
+            <img src="images/fly.png" alt="mouche" />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-insect-btn">
+            <p>mosutique</p>
+            <img src="images/mosquito.png" alt="moustique" />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-insect-btn">
+            <p>arrainge</p>
+            <img src="images/spider.png" alt="arraigne" />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-insect-btn">
+            <p>cafard</p>
+            <img src="images/roach.png" alt="cafard" />
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Temps: 00:00</h3>
+      <h3 id="score" class="score">Score: 0</h3>
+      <h5 id="messageWinner" class="message">
+        vous avez gagnez score superieur ou egale 5 <br />
+      
+
+      </h5>
+
+      <h5 id="messageLooser" class="message">
+        vous avez perdu score insuffisant <br />
+      
+      </h5>
+      
+
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
