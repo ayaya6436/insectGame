@@ -4,6 +4,44 @@
     box-sizing: border-box;
 }
 
+
+    h2{
+        font-size: 1.5px 
+
+    }
+    @media only screen and (min-width: 600px) {
+        h2{
+            font-size: 20px
+        }
+
+        
+    }
+
+    h2{
+        position: relative;
+        font-size: 10vw;
+        -webkit-text-stroke: 0.3vw #383d52;
+        color:#252839;
+        text-transform: uppercase;
+       
+    
+    }
+    
+     h2::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        
+        color: #03a9f4;
+        -webkit-text-stroke: 0vw #383d52;
+        border-right: 2px solid #03a9f4 ;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+    } 
+ 
 body {
     background-color:#252839;
     /* color: black; */
@@ -23,29 +61,7 @@ h1 {
     color: #fff;
     
 }
-h2{
-    position: relative;
-    font-size: 14vh;
-    -webkit-text-stroke: 0.3vw #383d52;
-    color:#252839;
-    text-transform: uppercase;
 
-}
-
- h2::before{
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    
-    color: #03a9f4;
-    -webkit-text-stroke: 0vw #383d52;
-    border-right: 2px solid #03a9f4 ;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
-} 
 
 @keyframes animate {
     0%,10%,100% {
@@ -209,8 +225,6 @@ h2{
     height: 100px;
     height: 100px;
     position: absolute;
-    /* top: 400px;
-    left: 500px; */
     transform: translate(-50%, -50%) scale(1);
     transition: transfom 0.3s ease-in-out;
 }
